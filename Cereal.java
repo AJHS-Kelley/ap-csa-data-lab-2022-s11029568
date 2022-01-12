@@ -5,31 +5,31 @@ public class Cereal
 
 
     private double fiber;
-    private String cerealName;
+    private String name;
     private double cups;
-    private double fiberPerCup;
+    private double FPC;
 
-    public Cereal(String cerealName, double fiber, double cups, double fiberPerCup)  
+    public Cereal(String name, double fiber, double cups, double FPC)  
 
     {
-        name = cerealName;
-        Fiber = fiber; 
+        name = name;
+        fiber = fiber; 
         cups = cups;
-        FPC = fiberPerCup;
+        FPC = FPC;
 
     }
 
     public Cereal()
     {
-        cerealName = "";
-        fiber = 0.0
-        cups = 0.0
-        fiberPerCup = 0.0
+        name = "";
+        fiber = 0.0;
+        cups = 0.0;
+        FPC = 0.0;
 
     }
 
     // Getters
-    public string getName()
+    public String getName()
     {
         return name;
     }
@@ -46,16 +46,32 @@ public class Cereal
 
     public double getFPC()
     {
-        return fiberPerCup;
+        return FPC;
     }
 
     // toString Method
 
-    public string toString()
+    public String toString()
     {
-        return "Cereal: " + name + "Fiber Content: " + fiber + "Cups: " + cups + "Fiber Per Cup: " + fiberPerCup;
+        return "Cereal: " + name + "\nFiber Content: " + fiber + "\nCups: " + cups + "\nFiber Per Cup: " + FPC;
     }
 
+
+public static void main(String[] args) 
+{
+
+   Cereal food1 = new Cereal();
+   System.out.println(food1.toString());
+
+   Cereal food2 = new Cereal("Cheerios",2.0,1.25,0.0);
+   System.out.println(food2.toString());
+   
+   Cereal food3 = new Cereal ("Raisin Bran",5.0,0.75,0.0);
+   System.out.println(food3.toString());
+   
+   //Cereal food4
+
+}
 
 
 
