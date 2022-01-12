@@ -1,4 +1,4 @@
-// Maxx Secrest, 01/10/22, AP Data Lab, V0.3
+// Maxx Secrest, 01/10/22, AP Data Lab, V0.4
 
 public class Cereal
 {
@@ -44,9 +44,16 @@ public class Cereal
         return cups;
     }
 
-    public double getFBC()
+    public double getFPC()
     {
         return fiberPerCup;
+    }
+
+    // toString Method
+
+    public string toString()
+    {
+        return "Cereal: " + name + "Fiber Content: " + fiber + "Cups: " + cups + "Fiber Per Cup: " + fiberPerCup;
     }
 
 
